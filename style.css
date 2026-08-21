@@ -319,3 +319,94 @@ body {
 .inquire-btn:hover {
     color: #ffffff;
 }
+/* Footer Styles */
+.footer {
+    background-color: #0c0b09;
+    padding: 80px 6% 40px 6%;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    color: #9c9990;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dfce9f;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    color: #dfce9f;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.nav-col ul {
+    list-style: none;
+}
+
+.nav-col li {
+    margin-bottom: 10px;
+}
+
+.nav-col a {
+    color: #9c9990;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: #dfce9f;
+    text-decoration: none;
+}
+
+.book-consultation {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #dfce9f;
+    color: #dfce9f;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.book-consultation:hover {
+    background: #dfce9f;
+    color: #0c0b09;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+    font-size: 0.75rem;
+}
