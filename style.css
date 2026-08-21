@@ -1,1 +1,171 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0c0b09;
+    color: #e6e4df;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 6%;
+    background-color: #0c0b09;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-box {
+    background: #ffffff;
+    color: #0c0b09;
+    padding: 6px 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+}
+
+.brand-logo:hover .logo-box {
+    opacity: 0.85;
+}
+
+.nav-links {
+    display: flex;
+    gap: 36px;
+}
+
+.nav-links a {
+    color: #b3b0a5;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e6e4df;
+}
+
+.btn-contact {
+    background-color: #dfce9f;
+    color: #0c0b09;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #cbb680;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: radial-gradient(circle at center, #181510 0%, #0c0b09 70%);
+}
+
+.hero-container {
+    max-width: 780px;
+}
+
+.spotlight-badge {
+    display: inline-block;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.spotlight-badge span {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    color: #dfce9f;
+    font-weight: 600;
+}
+
+.hero-section h1 {
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f7f4ec;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    font-size: 1rem;
+    color: #d1cfc7;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.hero-subdesc {
+    font-size: 0.9rem;
+    color: #9c9990;
+    line-height: 1.8;
+    margin-bottom: 36px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-gold {
+    background-color: #dfce9f;
+    color: #0c0b09;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #cbb680;
+}
+
+.btn-outline {
+    background-color: rgba(255, 255, 255, 0.04);
+    color: #e6e4df;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+}
