@@ -446,6 +446,7 @@ body {
         position: absolute;
         top: 100%;
         left: 0;
+        width: 0%; /* atau 100% */
         width: 100%;
         background-color: #0c0b09;
         flex-direction: column;
@@ -455,7 +456,6 @@ body {
         box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
 
-    /* Kelas aktif saat menu dibuka lewat tombol hamburger */
     .nav-links.active {
         display: flex;
     }
@@ -465,17 +465,16 @@ body {
         font-size: 1rem;
     }
 
-    /* Sembunyikan tombol Contact Us bawaan desktop di HP */
+    /* TAMBAHKAN INI AGAR TOMBOL CONTACT KANAN HILANG DI HP */
     .nav-action {
         display: none;
     }
 
-    /* WAJIB: Munculkan tombol hamburger di HP */
+    /* Munculkan tombol hamburger */
     .menu-toggle {
         display: flex;
     }
 
-    /* Sesuaikan grid footer jadi 1 kolom di HP */
     .footer-container {
         grid-template-columns: 1fr;
         gap: 30px;
