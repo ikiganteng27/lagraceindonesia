@@ -437,6 +437,7 @@ body {
 @media (max-width: 768px) {
     .navbar {
         padding: 16px 5%;
+        position: relative;
     }
 
     /* Sembunyikan menu utama secara default di HP */
@@ -454,7 +455,7 @@ body {
         box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
 
-    /* Kelas aktif saat menu dibuka */
+    /* Kelas aktif saat menu dibuka lewat tombol hamburger */
     .nav-links.active {
         display: flex;
     }
@@ -464,12 +465,12 @@ body {
         font-size: 1rem;
     }
 
-    /* Sembunyikan tombol Contact Us di kanan atas navbar HP agar tidak sempit */
+    /* Sembunyikan tombol Contact Us bawaan desktop di HP */
     .nav-action {
         display: none;
     }
 
-    /* Munculkan tombol hamburger */
+    /* WAJIB: Munculkan tombol hamburger di HP */
     .menu-toggle {
         display: flex;
     }
