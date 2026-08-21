@@ -1,6 +1,204 @@
-<nav class="flex gap-6 text-sm font-medium">
-  <a href="index.html" class="hover:text-amber-400">Home</a>
-  <a href="about.html" class="hover:text-amber-400">About</a>
-  <a href="services.html" class="hover:text-amber-400">Services</a>
-  <a href="contact.html" class="hover:text-amber-400">Contact</a>
-</nav>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — La Grâ̂ce</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="brand-logo">
+            <span class="logo-box">LA GRÂ̂CE</span>
+        </a>        
+        
+        <!-- Tombol Hamburger untuk HP -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" style="color: #e6e4df; font-weight: 600;">Contact</a>
+        </nav>
+        
+        <div class="nav-action">
+            <a href="contact.html" class="btn-contact">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="section-header">
+            <div class="curated-badge">
+                <span>✦ DIRECT ENGAGEMENT</span>
+            </div>
+            <h2>INITIATE YOUR HEADLINE MOMENT</h2>
+            <p>Connect with our executive producers to lock in your date, consult on custom talent lineups, and craft an unforgettable stage experience.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Kolom Kiri: Informasi Kontak & Standar -->
+            <div class="contact-info-col">
+                <div class="info-card">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <h4>DIRECT CONCIERGE LINE</h4>
+                        <p class="info-highlight">(555) 987-6543</p>
+                        <p class="info-sub">Immediate availability for urgent production bookings</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <h4>PRODUCTION INQUIRIES</h4>
+                        <p class="info-highlight">contact@lagraceindonesia.shop</p>
+                        <p class="info-sub">Comprehensive rider specs & custom deck submissions</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">🕒</span>
+                    <div>
+                        <h4>CONCIERGE HOURS</h4>
+                        <p class="info-highlight">Mon-Fri: 9am - 6pm</p>
+                        <p class="info-sub">Sat-Sun: By Appointment for active client productions</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <h4>HEADQUARTERS & SOUNDSTAGE</h4>
+                        <p class="info-highlight">1234 Gold Avenue, Suite 100</p>
+                        <p class="info-sub">Metropolis, NY 10001</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-standard-box">
+                    <h4>THE SPOTLIGHT STANDARD</h4>
+                    <div class="standard-item">
+                        <strong>✓ Guaranteed 24h Response</strong>
+                        <p>Every inquiry receives a tailored consultation reply within one business day.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Form Kontak Formspree -->
+            <div class="contact-form-col">
+                <div class="form-card-header">
+                    <span class="badge-sub">BESPOKE INQUIRY</span>
+                    <span class="badge-season">📅 Booking 2025 – 2026 Season</span>
+                </div>
+                <h3>Contact Us</h3>
+                <p class="form-desc">Provide your initial parameters below. Our production team will review technical riders and confirm date exclusivity.</p>
+
+                <!-- 
+                  Ganti action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" 
+                  dengan link endpoint Formspree kamu sendiri nanti.
+                -->
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="inquiry-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>YOUR NAME *</label>
+                            <input type="text" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>EMAIL ADDRESS *</label>
+                            <input type="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>PHONE NUMBER (OPTIONAL)</label>
+                            <input type="tel" name="phone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label>TYPE OF EVENT *</label>
+                            <select name="event_type" required>
+                                <option value="" disabled selected>Select an event type</option>
+                                <option value="Bespoke Live Bands">Bespoke Live Bands</option>
+                                <option value="Celebrity & World-Class DJs">Celebrity & World-Class DJs</option>
+                                <option value="Stage Production & Design">Stage Production & Design</option>
+                                <option value="Full Celebration Solutions & Hampers">Full Celebration Solutions & Hampers</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>MESSAGE & EVENT SCOPE *</label>
+                        <textarea name="message" rows="5" placeholder="Tell us about your event (expected date, target venue, guest count, and entertainment desires)..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">REQUEST BESPOKE EVENT PROPOSAL ↗</button>
+                    <p class="form-footer-note">Zero obligation. We honor total client privacy and execute strict production confidentiality.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">LA GRÂ̂CE</div>
+                <p>Turning every event into a headline moment with theatrical stage production, signature talent curation, and high-impact audiovisual experiences.</p>
+                <div class="footer-contact">
+                    <p>📍 1234 Gold Avenue, Suite 100, Metropolis, NY 10001</p>
+                    <p>📞 (555) 987-6543</p>
+                    <p>✉️ contact@spotlightevent.com</p>
+                </div>
+            </div>
+
+            <!-- Navigation Column -->
+            <div class="footer-col nav-col">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Connect Column -->
+            <div class="footer-col connect-col">
+                <h4>CONNECT</h4>
+                <div class="social-icons">
+                    <a href="#">IG</a>
+                    <a href="#">FB</a>
+                    <a href="#">YT</a>
+                    <a href="#">LI</a>
+                </div>
+                <a href="contact.html" class="book-consultation">Book Consultation ↗</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 La Grâ̂ce Indonesia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script untuk Toggle Menu HP -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
