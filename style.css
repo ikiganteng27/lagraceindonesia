@@ -1,4 +1,6 @@
-/* Reset & Base Styles */
+/* =========================================
+   1. RESET & BASE STYLES
+   ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar */
+/* =========================================
+   2. NAVBAR & LOGO STYLING
+   ========================================= */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,19 +35,11 @@ body {
     align-items: center;
 }
 
-.logo-box {
-    background: #ffffff;
-    color: #0c0b09;
-    padding: 6px 12px;
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    transition: opacity 0.3s;
-}
-
-.brand-logo:hover .logo-box {
-    opacity: 0.85;
+/* Pengunci logo agar tidak tampil raksasa */
+.navbar-logo-img {
+    height: 38px !important;
+    width: auto !important;
+    object-fit: contain !important;
 }
 
 .nav-links {
@@ -78,7 +74,9 @@ body {
     background-color: #cbb680;
 }
 
-/* Hero Section */
+/* =========================================
+   3. HERO SECTION
+   ========================================= */
 .hero-section {
     min-height: 90vh;
     display: flex;
@@ -169,330 +167,10 @@ body {
     background-color: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.25);
 }
-/* Rate Cards Section Styling */
-.rate-cards-section {
-    padding: 80px 6%;
-    background-color: #0c0b09;
-}
 
-.section-header {
-    text-align: center;
-    max-width: 750px;
-    margin: 0 auto 50px auto;
-}
-
-.curated-badge {
-    display: inline-block;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    padding: 5px 14px;
-    border-radius: 20px;
-    margin-bottom: 16px;
-    background: rgba(212, 175, 55, 0.05);
-}
-
-.curated-badge span {
-    font-size: 0.7rem;
-    letter-spacing: 1.5px;
-    color: #dfce9f;
-    font-weight: 600;
-}
-
-.section-header h2 {
-    font-size: clamp(2rem, 4vw, 2.8rem);
-    color: #f7f4ec;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.section-header p {
-    font-size: 0.9rem;
-    color: #9c9990;
-    line-height: 1.7;
-}
-
-/* Cards Grid */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Rate Card Individual */
-.rate-card {
-    background-color: #14120f;
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    border-radius: 12px;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-}
-
-/* Efek Animasi Mengambang saat disentuh (hover) atau diklik (active) */
-.rate-card:hover,
-.rate-card:active {
-    transform: translateY(-8px);
-    border-color: rgba(212, 175, 55, 0.5);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(212, 175, 55, 0.1);
-}
-
-.card-badge {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #dfce9f;
-    background: rgba(212, 175, 55, 0.08);
-    padding: 6px 12px;
-    border-radius: 6px;
-    margin-bottom: 16px;
-    align-self: flex-start;
-}
-
-.card-img-placeholder {
-    width: 100%;
-    height: 180px;
-    background: #1c1915;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #706c62;
-    font-size: 0.85rem;
-    margin-bottom: 20px;
-    border: 1px dashed rgba(255, 255, 255, 0.08);
-}
-
-.rate-card h3 {
-    font-size: 1.25rem;
-    color: #f7f4ec;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.card-desc {
-    font-size: 0.85rem;
-    color: #9c9990;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.card-list {
-    list-style: none;
-    margin-bottom: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-    padding-top: 16px;
-}
-
-.card-list li {
-    font-size: 0.85rem;
-    color: #d1cfc7;
-    margin-bottom: 10px;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-    padding-top: 16px;
-}
-
-.footer-label {
-    font-size: 0.65rem;
-    letter-spacing: 1px;
-    color: #706c62;
-    font-weight: 600;
-}
-
-.inquire-btn {
-    color: #dfce9f;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: color 0.2s;
-}
-
-.inquire-btn:hover {
-    color: #ffffff;
-}
-/* Footer Styles */
-.footer {
-    background-color: #0c0b09;
-    padding: 80px 6% 40px 6%;
-    border-top: 1px solid rgba(212, 175, 55, 0.2);
-    color: #9c9990;
-}
-
-.footer-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #dfce9f;
-    margin-bottom: 20px;
-}
-
-.footer-col p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.footer-col h4 {
-    color: #dfce9f;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-.nav-col ul {
-    list-style: none;
-}
-
-.nav-col li {
-    margin-bottom: 10px;
-}
-
-.nav-col a {
-    color: #9c9990;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.social-icons a {
-    width: 35px;
-    height: 35px;
-    border: 1px solid #333;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    color: #dfce9f;
-    text-decoration: none;
-}
-
-.book-consultation {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid #dfce9f;
-    color: #dfce9f;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: 0.3s;
-}
-
-.book-consultation:hover {
-    background: #dfce9f;
-    color: #0c0b09;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #1a1a1a;
-    font-size: 0.75rem;
-}
 /* =========================================
-   RESPONSIVE NAVBAR & MOBILE FIXES
+   4. SERVICES & RATE CARDS SECTION
    ========================================= */
-
-/* Sembunyikan tombol menu toggle di desktop */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-    padding: 5px;
-}
-
-.menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: #dfce9f;
-    transition: 0.3s;
-}
-
-/* Tampilan untuk layar HP (Mobile / max-width: 768px) */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 16px 5%;
-        position: relative;
-    }
-
-    /* Sembunyikan menu utama secara default di HP */
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 0%; /* atau 100% */
-        width: 100%;
-        background-color: #0c0b09;
-        flex-direction: column;
-        align-items: center;
-        padding: 25px 0;
-        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 12px 0;
-        font-size: 1rem;
-    }
-
-    /* TAMBAHKAN INI AGAR TOMBOL CONTACT KANAN HILANG DI HP */
-    .nav-action {
-        display: none;
-    }
-
-    /* Munculkan tombol hamburger */
-    .menu-toggle {
-        display: flex;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-}
-
-/* Tampilan untuk Tablet / iPad (max-width: 1024px) */
-@media (max-width: 1024px) and (min-width: 769px) {
-    .navbar {
-        padding: 20px 5%;
-    }
-    
-    .footer-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-}
-/* --- SERVICES & RATE CARDS STYLES --- */
 .rate-cards-section, .contact-section {
     padding: 80px 6%;
     background-color: #0c0b09;
@@ -550,12 +228,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: 0.3s;
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
-.rate-card:hover {
-    border-color: rgba(212, 175, 55, 0.4);
-    transform: translateY(-5px);
+.rate-card:hover,
+.rate-card:active {
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.5);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(212, 175, 55, 0.1);
 }
 
 .card-badge {
@@ -565,9 +245,10 @@ body {
     letter-spacing: 1px;
     color: #dfce9f;
     background: rgba(212, 175, 55, 0.08);
-    padding: 4px 10px;
-    border-radius: 4px;
+    padding: 6px 12px;
+    border-radius: 6px;
     margin-bottom: 15px;
+    align-self: flex-start;
 }
 
 .rate-card h3 {
@@ -580,11 +261,14 @@ body {
     color: #9c9990;
     font-size: 0.85rem;
     margin-bottom: 25px;
+    line-height: 1.6;
 }
 
 .card-list {
     list-style: none;
     margin-bottom: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 16px;
 }
 
 .card-list li {
@@ -627,7 +311,9 @@ body {
     color: #0c0b09;
 }
 
-/* --- CONTACT PAGE STYLES --- */
+/* =========================================
+   5. CONTACT PAGE STYLES
+   ========================================= */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
@@ -809,7 +495,87 @@ body {
     color: #7a776f;
 }
 
-/* Responsif untuk HP */
+/* =========================================
+   6. FOOTER STYLES
+   ========================================= */
+.footer {
+    background-color: #0c0b09;
+    padding: 80px 6% 40px 6%;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    color: #9c9990;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dfce9f;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    color: #dfce9f;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.nav-col ul {
+    list-style: none;
+}
+
+.nav-col li {
+    margin-bottom: 10px;
+}
+
+.nav-col a {
+    color: #9c9990;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+    font-size: 0.75rem;
+}
+
+/* =========================================
+   7. RESPONSIVE MEDIA QUERIES
+   ========================================= */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #dfce9f;
+    transition: 0.3s;
+}
+
 @media (max-width: 900px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -822,123 +588,57 @@ body {
         margin-bottom: 20px;
     }
 }
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Grâce — One-Stop Celebration Solution</title>
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 5%;
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0c0b09;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+
+    .nav-action {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .navbar {
+        padding: 20px 5%;
+    }
     
-    <!-- Favicon / Logo di Tab Browser -->
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/vTbywnqx/LOGO-LA-GRACE-AMORANT-logo-la-grace-hampers-hitam.png">
-
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Open Graph / Social Media Preview Tags -->
-    <meta property="og:title" content="La Grâce — One-Stop Celebration Solution">
-    <meta property="og:description" content="Turn every celebration into a headline moment. From bespoke live bands, world-class DJs, to premium hampers and stage production.">
-    <meta property="og:image" content="https://i.postimg.cc/vTbywnqx/LOGO-LA-GRACE-AMORANT-logo-la-grace-hampers-hitam.png">
-    <meta property="og:url" content="https://lagraceindonesia.shop">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="La Grâce — One-Stop Celebration Solution">
-    <meta name="twitter:description" content="Turn every celebration into a headline moment with La Grâ̂ce Indonesia.">
-    <meta name="twitter:image" content="https://i.postimg.cc/vTbywnqx/LOGO-LA-GRACE-AMORANT-logo-la-grace-hampers-hitam.png">
-</head>
-<body>
-
-    <!-- Header / Navbar -->
-    <header class="navbar">
-        <a href="index.html" class="brand-logo">
-            <img src="https://i.postimg.cc/vTbywnqx/LOGO-LA-GRACE-AMORANT-logo-la-grace-hampers-hitam.png" alt="La Grâce Logo" class="navbar-logo-img">
-        </a>        
-        
-        <!-- Tombol Hamburger untuk HP -->
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="nav-links" id="navLinks">
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        
-        <div class="nav-action">
-            <a href="contact.html" class="btn-contact">Contact Us</a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-container">
-            <div class="spotlight-badge">
-                <span>✦ SPOTLIGHT ENTERTAINMENT EXPERIENCE</span>
-            </div>
-            <h1>LA GRÂCE</h1>
-            <p class="hero-desc">
-                WELCOME TO LA GRÂCE INDONESIA Your One-Stop Celebration Solution. At La Grâce Indonesia, we believe every celebration deserves to be beautifully created, thoughtfully curated, and truly remembered.
-            </p>
-            <p class="hero-subdesc">
-                From intimate birthdays and meaningful weddings to grand celebrations and special occasions, we bring everything you need under one roof — entertainment, decoration, souvenirs, and curated hampers. Choose one service or combine them all. Every element can be tailored to your style, needs, and occasion, giving you the freedom to create a celebration that feels uniquely yours. One place. Multiple possibilities. One unforgettable celebration. Welcome to La Grâce Indonesia, where every celebration begins with an idea and becomes a moment worth remembering.
-            </p>
-            <div class="hero-buttons">
-                <a href="contact.html" class="btn-gold">Contact Us Today →</a>
-                <a href="services.html" class="btn-outline">View Service Offerings</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container" style="display: flex; justify-content: space-between; max-width: 1000px; margin: 0 auto; padding: 20px;">
-            
-            <!-- Brand Column (Mengambil porsi 60%) -->
-            <div class="footer-col brand-col" style="flex: 0 0 60%;">
-                <div class="footer-logo">LA GRÂCE</div>
-                <p>Turning every event into a headline moment with theatrical stage production, signature talent curation, and high-impact audiovisual experiences.</p>
-                <div class="footer-contact">
-                    <p>📍 1234 Gold Avenue, Suite 100, Metropolis, NY 10001</p>
-                    <p>📞 (555) 987-6543</p>
-                    <p>✉️ contact@lagraceindonesia.shop</p>
-                </div>
-            </div>
-
-            <!-- Navigation Column (Mengambil porsi 20%) -->
-            <div class="footer-col nav-col" style="flex: 0 0 20%;">
-                <h4>NAVIGATION</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-        </div>
-        
-        <!-- Footer Bottom tetap di tengah -->
-        <div class="footer-bottom" style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
-            <p>© 2026 La Grâce Indonesia. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Script untuk Toggle Menu HP -->
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
-
-</body>
-</html>
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
